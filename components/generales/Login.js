@@ -51,7 +51,7 @@ function Login() {
 
 	useEffect(() => {
 		if (autenticado) {
-			router.replace('/stock/total');
+			router.replace('/ventas/consultar');
 		}
 		if (mensaje) {
 			setAlerta({
