@@ -19,6 +19,7 @@ import {
 } from '@material-ui/icons';
 import { Backdrop } from '@material-ui/core';
 import { CircularProgress } from '@material-ui/core';
+import ClienteContext from '../../context/clientes/ClienteContext';
 
 const useStyles = makeStyles((theme) => ({
 	backdrop: {
@@ -52,6 +53,7 @@ const BotoneraCarrito = () => {
 		handleOpenEnvio,
 	} = useContext(BotoneraCarrContext);
 	const { alerta, mostrarAlerta } = useContext(AlertaContext);
+	const { removeNewClient } = useContext(ClienteContext);
 
 	useEffect(() => {
 		if (ordenCreada) {
@@ -111,6 +113,8 @@ const BotoneraCarrito = () => {
 		}
 
 		setOpen(true);
+		removeNewClient();
+
 		crearOrden();
 	};
 

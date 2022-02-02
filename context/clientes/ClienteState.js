@@ -16,6 +16,7 @@ import {
 	ACTUALIZAR_CLIENTE,
 	AGREGAR_NUEVO_CLIENTE,
 	ABRIR_EDITAR_CLIENTE,
+	ELIMINAR_NUEVO_CLIENTE,
 } from '../../types';
 
 const ClienteState = (props) => {
@@ -184,6 +185,12 @@ const ClienteState = (props) => {
 		}, 4000);
 	};
 
+	const removeNewClient = () => {
+		dispatch({
+			type: ELIMINAR_NUEVO_CLIENTE,
+		});
+	};
+
 	return (
 		<ClienteContext.Provider
 			value={{
@@ -208,6 +215,7 @@ const ClienteState = (props) => {
 				handleOpenFacsOrdsCliente,
 				handleOpenEditClient,
 				handleClose,
+				removeNewClient,
 			}}
 		>
 			{props.children}

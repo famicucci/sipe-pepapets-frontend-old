@@ -11,6 +11,7 @@ import {
 	ACTUALIZAR_CLIENTE,
 	AGREGAR_NUEVO_CLIENTE,
 	ABRIR_EDITAR_CLIENTE,
+	ELIMINAR_NUEVO_CLIENTE,
 } from '../../types';
 
 const ClientesReducer = (state, action) => {
@@ -82,6 +83,11 @@ const ClientesReducer = (state, action) => {
 			return {
 				...state,
 				newClient: action.payload,
+			};
+		case ELIMINAR_NUEVO_CLIENTE:
+			return {
+				...state,
+				newClient: null,
 			};
 		default:
 			return state;
