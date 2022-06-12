@@ -51,9 +51,6 @@ const FilaEditarClientes = ({ fila, colIndex }) => {
 				<TableCell align="center">
 					<SelectOrdenEstado
 						idOrden={fila.idOrden}
-						showFinalizado={
-							fila.idFactura && fila.estadoPago === 'Pago' ? true : false
-						}
 						ordenEstadoId={fila.ordenEstadoId}
 					/>
 				</TableCell>
