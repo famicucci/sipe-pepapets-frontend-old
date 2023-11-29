@@ -26,7 +26,7 @@ const Precios = () => {
   }, [botonActivo]);
 
   return (
-    <Link href="precios">
+    <Link href="/precios">
       <ListItem
         button
         className={clsx({

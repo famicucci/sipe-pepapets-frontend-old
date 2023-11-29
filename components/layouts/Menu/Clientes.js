@@ -26,7 +26,7 @@ const Clientes = () => {
   }, [botonActivo]);
 
   return (
-    <Link href="clientes">
+    <Link href="/clientes">
       <ListItem
         button
         className={clsx({

@@ -65,7 +65,7 @@ const Stock = () => {
       </ListItem>
       <Collapse in={openStock} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <Link href="total">
+          <Link href="/stock/total">
             <ListItem
               button
               className={clsx(classes.nested, {
@@ -81,7 +81,7 @@ const Stock = () => {
               <ListItemText primary="Total" />
             </ListItem>
           </Link>
-          <Link href="punto-stock">
+          <Link href="/stock/punto-stock">
             <ListItem
               button
               className={clsx(classes.nested, {
@@ -97,7 +97,7 @@ const Stock = () => {
               <ListItemText primary="Puntos de stock" />
             </ListItem>
           </Link>
-          <Link href="movimientos">
+          <Link href="/stock/movimientos">
             <ListItem
               button
               className={clsx(classes.nested, {

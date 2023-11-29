@@ -71,7 +71,7 @@ const Ventas = () => {
 
       <Collapse in={openVentas} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <Link href="consultar">
+          <Link href="/ventas/consultar">
             <ListItem
               button
               className={clsx(classes.nested, {
@@ -87,7 +87,7 @@ const Ventas = () => {
               <ListItemText primary="Consultar" />
             </ListItem>
           </Link>
-          <Link href="nuevo">
+          <Link href="/ventas/nuevo">
             <ListItem
               button
               className={clsx(classes.nested, {
@@ -103,7 +103,7 @@ const Ventas = () => {
               <ListItemText primary="Nuevo" />
             </ListItem>
           </Link>
-          <Link href="productos-mover">
+          <Link href="/ventas/productos-mover">
             <ListItem
               button
               className={clsx(classes.nested, {
@@ -119,7 +119,7 @@ const Ventas = () => {
               <ListItemText primary="Prod. a Mover" />
             </ListItem>
           </Link>
-          <Link href="finalizadas">
+          <Link href="/ventas/finalizadas">
             <ListItem
               button
               className={clsx(classes.nested, {
