@@ -26,7 +26,7 @@ const Gastos = () => {
   }, [botonActivo]);
 
   return (
-    <Link href="gastos">
+    <Link href="/gastos">
       <ListItem
         button
         className={clsx({
